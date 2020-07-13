@@ -5,21 +5,28 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Pocetak");
         
-        int x = 5;
-        Car auto1 = new Car();
+        Car audi8 = new Car();
 
-        auto1.model = "Audi";
-        auto1.buildYear = 2003;
-        auto1.ccm = 2000;
+        audi8.setModel("Audi broj 8");
+        audi8.setBuildYear(2003);
+        audi8.setCcm(2000);
+        audi8.setColor("green");
         
-        System.out.println("Model automobila 1 je: " + auto1.model);
+        audi8.printAttributes();
         
-        int y = 29;
-        Car auto2 = new Car();
-        auto2.model = "Fiat";
-        auto2.buildYear = 2019;
+        Car fiatPunto = new Car();
+        fiatPunto.setModel("Fiat");
+        fiatPunto.setBuildYear(2019);
         
-        System.out.println("Model automobila 2 je: " + auto2.model);
+        fiatPunto.printAttributes();
+        
+        Car lada = new Car();
+        lada.setModel("Lada");
+        
+        lada.printAttributes();
+
+        
     }
+    
 
 }
